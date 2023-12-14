@@ -79,7 +79,7 @@
   // const OPEN_AI_ENDPOINT = 'https://api.openai.com/v1'
 
   // Security, do not deploy this in production
-  //const chatGPTKey = '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'; // Create an API key from here
+  //const chatGPTKey = 'sk-'; // Create an API key from here
 
   // Local GPT
   const OPEN_AI_ENDPOINT = 'http://localhost:8000/v1'
@@ -125,7 +125,8 @@
             }, {
               headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${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}`,
+                'Authorization': `Bearer ${sk-}`,
+                //put your key after sk-
               },
             }
           );
