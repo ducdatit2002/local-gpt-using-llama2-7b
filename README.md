@@ -50,7 +50,20 @@ Please note that this is a simple setup meant for local development and testing.
 
 1. **Download model**
 
-Create a folder named `models`, then download `mistral-7b-openorca.Q4_0.gguf` from here <https://huggingface.co/Open-Orca/Mistral-7B-OpenOrca> and put into the `models` folder
+Create a folder named `models`, then download `mistral-7b-openorca.Q4_0.gguf` from here <https://huggingface.co/Open-Orca/Mistral-7B-OpenOrca> and put into the `models` folder:
+
+```bash
+pip3 install huggingface-hub
+```
+```bash
+huggingface-cli download TheBloke/Mistral-7B-OpenOrca-GGUF mistral-7b-openorca.Q4_K_M.gguf --local-dir . --local-dir-use-symlinks
+```
+```bash
+pip3 install hf_transfer
+```
+```bash
+HF_HUB_ENABLE_HF_TRANSFER=1 huggingface-cli download TheBloke/Mistral-7B-OpenOrca-GGUF mistral-7b-openorca.Q4_K_M.gguf --local-dir . --local-dir-use-symlinks
+```
 
 2. **Install llama_cpp Python**
 
