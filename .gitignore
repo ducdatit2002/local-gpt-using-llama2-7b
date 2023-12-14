@@ -1,0 +1,3 @@
+*.history
+*.gguf
+.DS_Store
